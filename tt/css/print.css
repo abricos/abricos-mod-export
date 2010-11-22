@@ -1,0 +1,44 @@
+/* YUI Reset CSS */
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+
+/* YUI Fonts CSS */
+body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}select,input,button,textarea,button{font:99% arial,helvetica,clean,sans-serif;}table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+
+body, html {
+	background-color:#FFFFFF;
+	margin:0;
+	padding:0;
+	font-family:arial,verdana,helvetica,lucida,sans-serif;
+}
+
+table, tr, td, div, ul, ol, li, p, h1, h2, h3, h4, h5, h6	{
+	text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 4px 0 5px 10px;
+	font-weight: normal;
+}
+h1 { font-size: 160%; }
+h2 { font-size: 150%; }
+h3 { font-size: 140%; }
+ul {
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0;
+	padding: 4px 0 0 10px;
+}
+b, strong	{
+	font-weight: bold;
+}
+
+a, a:link {
+	color: #6a7398;
+}
+a:hover {
+	color: #f00;
+}
+a:active, a:visited {
+	color: #6a7398;
+}
