@@ -11,9 +11,6 @@
 /**
  * Модуль "Прайс-лист интернет магазина" 
  */
-$mod = new ExportModule();
-CMSRegistry::$instance->modules->Register($mod);
-
 class ExportModule extends CMSModule {
 	
 	private $_manager;
@@ -82,5 +79,7 @@ class ExportPermission extends CMSPermission {
 	}
 }
 
+$mod = new ExportModule();
+CMSRegistry::$instance->modules->Register($mod);
 
 ?>
