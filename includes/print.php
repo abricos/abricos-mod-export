@@ -8,7 +8,7 @@
  * @author Alexander Kuzmin (roosit@abricos.org)
  */
 
-$adress = Brick::$cms->adress;
+$adress = Abricos::$adress;
 
 $mod = Brick::$modules->GetModule($adress->dir[2]);
 if (empty($mod)){ return; }

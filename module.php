@@ -11,12 +11,12 @@
 /**
  * Модуль "Прайс-лист интернет магазина" 
  */
-class ExportModule extends CMSModule {
+class ExportModule extends Ab_Module {
 	
 	private $_manager;
 	
 	function __construct(){
-		$this->version = "0.1";
+		$this->version = "0.1.1";
 		$this->name = "export";
 		$this->takelink = "export";
 		
@@ -79,7 +79,6 @@ class ExportPermission extends CMSPermission {
 	}
 }
 
-$mod = new ExportModule();
-CMSRegistry::$instance->modules->Register($mod);
+Abricos::ModuleRegister(new ExportModule());
 
 ?>

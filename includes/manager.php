@@ -10,7 +10,7 @@
 
 // require_once 'dbquery.php';
 
-class ExportManager extends ModuleManager {
+class ExportManager extends Ab_ModuleManager {
 	
 	/**
 	 * 
@@ -18,20 +18,10 @@ class ExportManager extends ModuleManager {
 	 */
 	public $module = null;
 	
-	/**
-	 * User
-	 * @var User
-	 */
-	public $user = null;
-	public $userid = 0;
-	
 	private $_disableRoles = false;
 	
-	public function ExportManager(ExportModule $module){
-		parent::ModuleManager($module);
-		
-		$this->user = CMSRegistry::$instance->modules->GetModule('user');
-		$this->userid = $this->user->info['userid'];
+	public function __construct(ExportModule $module){
+		parent::__construct($module);
 	}
 	
 	public function DisableRole(){
@@ -39,11 +29,11 @@ class ExportManager extends ModuleManager {
 	}
 	
 	public function IsAdminRole(){
-		return $this->module->permission->CheckAction(ExportAction::ADMIN) > 0;
+		return $this->IsRoleEnable(ExportAction::ADMIN);
 	}
 	
 	public function IsViewRole(){
-		return $this->module->permission->CheckAction(ExportAction::VIEW) > 0;
+		return $this->IsRoleEnable(ExportAction::VIEW);
 	}
 
 	/*
